@@ -1,0 +1,7 @@
+{
+  "name": "PythonUser",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

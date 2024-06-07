@@ -1,0 +1,44 @@
+ion-toolbar{
+    --background: rgb(51, 51, 242);
+}
+
+.titicon{
+    font-size: 35px;
+    color: black;
+    transform: rotate(180deg);
+    margin-left: 30px;
+}
+
+.tit{
+    color: white;
+    margin-left: 55px;
+    font-size: 25px;
+}
+
+
+ion-input{
+    border: solid 2px rgb(51, 51, 242);
+    --padding-start: 10px;
+    --padding-end: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.lbl{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+ion-button{
+    text-transform: none;
+    --background: rgb(51, 51, 242);
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 550;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    --border-radius: 10px;
+    height: 45px;
+    --box-shadow: none;
+}
