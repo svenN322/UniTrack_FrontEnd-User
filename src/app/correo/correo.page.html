@@ -1,39 +1,28 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-icon
-      class="titicon"
-      slot="start"
-      name="exit-outline"
-      routerLink="/login"
-    ></ion-icon>
+    <ion-button type="sumit" class="titicon" routerLink="/login" >SALIR</ion-button>
     <ion-title class="tit">¿Quieres cambiar tu contraseña?</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
   <ion-list class="ion-padding">
     <ion-item lines="none">
-      <ion-label class="lbl lblmen"
-        >Por favor ingrese su correo. Se enviara un token de verificacion para
-        el cambio de contraseña
+      <ion-label class="lbl lblmen">
+        Por favor ingrese su correo. Se enviará un token de verificación para el cambio de contraseña.
       </ion-label>
     </ion-item>
     <div>
       <ion-item lines="none" class="icorreo">
-        <ion-label class="lbl">Correo:</ion-label>
+        <ion-label class="lbl" >Correo:</ion-label>
       </ion-item>
       <ion-item lines="none" class="iinp">
-        <ion-input type="text" class="inp">
-          <ion-icon
-            class="iicon"
-            slot="start"
-            name="mail-outline"
-            aria-hidden="true"
-          ></ion-icon>
+        <ion-input type="text" [(ngModel)]="email" class="inp" placeholder="Ingrese su correo electrónico">
+        
         </ion-input>
       </ion-item>
     </div>
     <ion-item lines="none">
-      <ion-button routerLink="/verificar"> Enviar </ion-button>
+      <ion-button class="boton" (click)="sendVerificationCode()"> Enviar </ion-button>
     </ion-item>
   </ion-list>
 </ion-content>

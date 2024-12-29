@@ -1,9 +1,10 @@
 .header {
     position: absolute;
-    background: url("/assets/ucv-sede.png") 0 0/100% 100% no-repeat;
+   background-color: #0426ac;
     height: 300px;
     margin: 0px;
     width: 100%;
+
   }
   
   ion-list {
@@ -20,9 +21,15 @@
     text-transform: none;
     font-weight: 550;
     margin-left: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
-  
+  .well {
+    color: #4a6fff;
+    font-size: 35px;
+    text-transform: none;
+    font-weight: 550;
+  }
+
   .imgVallejito {
     height: 90px;
     width: 90px;
@@ -33,10 +40,10 @@
   .ptit {
     font-size: 25px;
     text-align: center;
-    font-weight: 800;
+    font-weight: 900;
     font-style: italic;
     color: white;
-    margin-top: 0px;
+    margin-top: 90px;
   }
 
   .lbl{
@@ -82,11 +89,11 @@
 
   .pcreac{
     margin-top: 30px;
-    margin-left: 5px;
+    margin-left: 80px;
   }
 
   .ppcreac{
-    margin-left: 27px;
+    margin-left: 55px;
   }
 
   .resco{
@@ -98,5 +105,5 @@
 
   .pres{
     margin-top: 0px;
-    margin-left: 60px;  
+    margin-left: 85px;  
   }

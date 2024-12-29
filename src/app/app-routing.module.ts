@@ -35,6 +35,15 @@ const routes: Routes = [
     path: 'qr',
     loadChildren: () => import('./qr/qr.module').then( m => m.QrPageModule)
   },
+  {
+    path: 'historial',
+    loadChildren: () => import('./historial/historial.module').then( m => m.HistorialPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+
 ];
 
 @NgModule({

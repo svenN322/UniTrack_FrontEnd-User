@@ -1,37 +1,34 @@
 <ion-content [fullscreen]="true">
   <div class="header">
-    <img class="imgVallejito" src="/assets/vallejito.png" alt="vallejito">
+    
     <p class="ptit">Universidad César Vallejo</p>
   </div>
   <ion-list lines="none" class="ion-text-center">
     <ion-item>
-      <p class="wel">BIENVENIDO</p>
+      <p class="wel">¡BIENVENIDO! INICIAR SESIÓN</p>
     </ion-item>
     <ion-item>
-      <ion-label class="lbl">Usuario:</ion-label>
+      <ion-label class="lbl">Correo institucional:</ion-label>
     </ion-item>
     <ion-item>
-      <ion-input type="text" fill="outline" class="ion-input">
-        <ion-icon class="iicon" slot="start" name="person-circle-outline" aria-hidden="true"></ion-icon>
+      <ion-input type="text" fill="outline" class="ion-input" [(ngModel)]="correoE" name="correo" placeholder="Ingrese su correo institucional">
+        
       </ion-input>
     </ion-item>
     <ion-item>
       <ion-label class="lbl">Contraseña:</ion-label>
     </ion-item>
     <ion-item>
-      <ion-input type="password" fill="outline" class="ion-input">
-        <ion-icon class="iicon" slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
-        <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+      <ion-input type="password" fill="outline" class="ion-input" [(ngModel)]="contrasenaE" name="contrasena" placeholder="Ingrese su contraseña">
       </ion-input>
     </ion-item>
     
     <ion-item class="ion-align-items-center">
-      <ion-button routerLink="/home" class="ion-button">Iniciar sesión</ion-button>
+      <ion-button (click)="login()" routerLink="" class="ion-button">Iniciar sesión</ion-button>
     </ion-item>
     
     <ion-item class="creac">
-      <p class="pcreac ppcreac">¿No tienes una cuenta?</p>
-      <p class="pcreac" routerLink="/register">Registrate</p>
+      <p class="pcreac ppcreac" routerLink="/register">¿No tienes una cuenta? Regístrate</p>
     </ion-item>
 
     <ion-item class="resco">
